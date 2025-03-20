@@ -1,0 +1,519 @@
+﻿body {
+    margin: 0px;
+    background-color: white;
+}
+html {
+    overflow-y: scroll;
+}
+html::-webkit-scrollbar {
+    display: none;  /*krie scroll bar na chrome*/
+}
+
+.heading {
+    font-family: "Press Start 2P", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #1e1e6a;
+    font-size: 32px;
+    margin-top: -15px;
+    text-align: center;
+    block-size: fit-content;
+    padding-left: 8px;
+    text-shadow:3px 1px 2px #0b0b28;
+}
+    .heading:hover {
+        cursor: default;
+    }
+
+p {
+    font-family: "Play", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    color: #1e1e6a; /* sino kak headingo */
+    text-align: justify;
+    font-weight:bold;
+    padding:40px;
+}
+    p:hover {
+        cursor: default;
+    }
+.column {
+    float: left;
+    width: 50%;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+p1 {
+    font-family: "Play", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+    color: #1e1e6a;
+    font-weight: bold;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+p1:hover {
+    cursor: default;
+}
+
+p2 {
+    font-family: "Play", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    color: #1e1e6a;
+    display: block;
+    text-align: left;
+    font-weight: bold;
+    padding-left: 8px;
+}
+p2:hover {
+    cursor: default;
+}
+p4 {
+    font-family: "Press Start 2P", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    color: rgb(142, 22, 22);
+    display: block;
+    font-weight: bold;
+    text-align: center;
+    padding: 40px;
+    padding-top:0px;
+    margin-top:-20px;
+    padding-bottom: 0px;
+    margin-bottom: -30px;
+    text-shadow: 3px 1px 2px rgb(70, 12, 12);
+}
+p4:hover {
+    cursor: default;
+}
+p6 {
+    font-family: "Play", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    color: white;
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    padding-left: 8px;
+}
+p6:hover {
+    cursor: default;
+}
+p7 {
+    font-family: "Play", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
+    color: #1e1e6a;
+    display: block;
+    font-weight: bold;
+}
+p7:hover {
+    cursor: default;
+}
+p10 {
+    font-family: "Play", serif;
+    color: white;
+}
+p10:hover {
+    cursor: default;
+}
+
+nav {
+    width: 100%;
+    height: 53px;
+    background-color: #1e1e6a;
+}
+
+    nav ul {
+        display: flex;
+        justify-content: flex-end; /* gi meste site na desno */
+        align-items: center;
+        list-style: none;
+        margin: 0;
+        background-color: #1e1e6a;
+
+    }
+        nav ul li.dropdown {
+            margin-left: auto;
+        }
+        nav ul li a {
+            background-color: #1e1e6a;
+            color: white;
+            font-family: "Play", serif;
+            font-weight: 400;
+            font-size: 30px;
+            text-decoration: none;
+            display: block;
+
+        }
+        nav ul .menu-items {
+            display: flex;
+            gap: 8px; /* mesto megu doma i nasiot tim*/
+            margin-right: 175px;
+        }
+            nav ul li {
+            position: relative;
+            padding: 0;
+        }
+        nav ul li .dropdown {
+               padding:30px;
+               float: right;
+               position: relative;
+               text-align: left;
+        }
+            nav ul li:last-child {
+                margin-left: 0;
+            }
+
+            nav ul li a:hover {
+        background-color: rgb(142, 22, 22);
+        color: white;
+        block-size: 53px;
+    }
+
+    nav ul li a:active {
+        background-color: rgb(109, 18, 18);
+    }
+
+            nav ul li a {
+                background-color: rgb(142, 22, 22);
+                color: white;
+                block-size: 53px;
+                font-family: "Play", serif;
+                font-weight: 400;
+                font-style: normal;
+                display: block;
+                padding: 8px;
+                color: white;
+                background-color: #1e1e6a;
+                font-size: 30px;
+                text-decoration: none;
+            }
+
+
+
+.dropdown {
+    position: absolute;
+    background-color: #1e1e6a;
+}
+
+
+    .dropdown a {
+        margin-left: 15px;
+        font-family: "Play", serif;
+        font-weight: 400;
+        padding: 8px;
+        font-style: normal;
+        display: block;
+        color: white;
+        background-color: #1e1e6a;
+        font-size: 30px;
+        text-decoration: none;
+        block-size: 53px;
+    }
+
+    .dropdown ul {
+        display: block;
+        background-color: #1e1e6a;
+        padding: 8px;
+        block-size: max-content;
+    }
+    .dropdown .content {
+        font-family: "Play", serif;
+        font-style: normal;
+        color: white;
+        background-color: #1e1e6a;
+        text-decoration: none;
+        display: none;
+        position: absolute;
+        top: 100%; /* predmeti i sov da se odma pod tutorstvo*/
+        left: 0;
+        padding:5px 10px 20px 0px;
+        margin-left:15px;
+        block-size: min-content;
+    }
+        .dropdown .content a {
+            font-family: "Play", serif;
+            font-style: normal;
+            color: white;
+            background-color: #1e1e6a;
+            text-decoration: none;
+            font-size: 19px;
+        }
+
+    .dropdown:hover .content {
+        display: block;
+        top: 100%; /* pred i sov da se pod ka e hover*/
+        left: 0;
+        margin:0px;
+    }
+.content {
+    display: block;
+    min-width: 105px;
+    min-height: 100px;
+    block-size: 45px;
+    background-color: rgb(142, 22, 22);
+}
+.dropdown:hover a:hover {
+    background-color: rgb(142, 22, 22);
+}
+
+
+
+.dropbox {
+    display: flex;
+    color: #1e1e6a;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-family: "Play", serif;
+    font-weight: bold;
+    font-style: normal;
+}
+
+.press-start-2p-regular {
+    font-family: "Play", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap:150px;
+}
+
+
+.flip-card {
+    background-color: transparent;
+    width: 233px;
+    height: 311px;
+    perspective: 1000px; /* 3d effekt */
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 233px;
+    height: 311px;
+    text-align: center;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+}
+
+/* rotacija */
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 233px;
+    height: 311px;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+/* ak se izguba slikata */
+.flip-card-front {
+    background-color: #1e1e6a;
+    color: black;
+}
+
+/* druga strana */
+.flip-card-back {
+    background-color: rgb(142, 22, 22);
+    color: white;
+    transform: rotateY(180deg);
+}
+
+
+* {
+    box-sizing: border-box;
+}
+.select {
+    width: 700px;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: flex;
+    flex-direction: column;
+    border: none;
+    background: #ddd;
+    }
+
+
+select option {
+    color: #808080;
+} 
+select selected{
+    color: black;
+}
+   
+input[type=text], input[type=password] {
+    width: 700px;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: flex;
+    flex-direction:column;
+    border: none;
+    background: #ddd;
+}
+
+    input[type=text]:focus, input[type=password]:focus {
+        background-color: #ddd;
+        outline: none;
+    }
+input[type=text], select, textarea {
+    width: 700px;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: flex;
+    flex-direction: column;
+    border: none;
+    background: #ddd;
+    font-family: "Play", serif;
+}
+hr {
+    border: 5px solid rgb(142, 22, 22);
+    margin-bottom: 25px;
+}
+
+button {
+    background-color: rgb(142, 22, 22);
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 1;
+    left: 50%;
+}
+
+    .cancelbtn:hover {
+        background-color: rgb(109, 18, 18);
+    }
+    .signupbtn:hover {
+        background-color: #131343;
+    }
+
+.center1 {
+    margin: 0;
+    position: absolute;
+    left: 180px;
+    }
+.center2 {
+    margin:0;
+    position: absolute;
+    right: 180px;
+}
+.center3 {
+    margin:0;
+    position:absolute;
+    left:300px;
+}
+    .cancelbtn {
+    border: 10px ridge rgb(109, 18, 18);
+    padding: 14px 20px;
+    width: 140px;
+    height: 60px;
+    background-color: rgb(142, 22, 22);
+}
+.signupbtn {
+    border: 10px ridge #0b0b28;
+    padding: 14px 20px;
+    float:right;
+    width: 140px;
+    height: 60px;
+    background-color: #1e1e6a;
+}
+    .signupbtn:active {
+        background-color: #0f0f36;
+    }
+.cancelbtn:active {
+    background-color: rgb(70, 12, 12);
+}
+
+
+.container1{
+    padding:16px;
+}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+.logo {
+    transition: transform 3s;
+
+}
+    .logo:hover {
+        transform: rotate(360deg);
+    }
+
+
+
+footer {
+    height: 100px;
+    margin-top: 96px;
+    background-color: rgb(142, 22, 22);
+    color: white;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    clear: both;
+    padding: 18px;
+    border: 10px ridge rgb(109, 18, 18);
+}
+.socmrezi {
+    display: flex;
+    justify-content: center;
+    column-gap: 50px;
+    align-items:center;
+}
+.instagram {
+    transition: ease;
+}
+.instagram:hover{
+    filter:invert(1);
+}
+.facebook {
+    transition: ease;
+}
+
+.facebook:hover {
+    filter: invert(1);
+}
+.youtube {
+    transition: ease;
+}
+
+.youtube:hover {
+    filter: invert(1);
+}
+.tiktok {
+    transition: ease;
+}
+
+.tiktok:hover {
+    filter: invert(1);
+}

@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>J(ana) Sandanski Tutoring</title>
+    <link rel="stylesheet" href="C:\Users\Laptop\Desktop\skolo\Veb Strana Za Ucilisni Konsultacii\style12.css">
+    <link rel="stylesheet" href="C:\Users\Laptop\Desktop\skolo\Veb Strana Za Ucilisni Konsultacii\style12.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<nav class="navbar">
+    <a href="http://jsandanski-strumica.edu.mk/">
+        <img class="logo" src="logo-1.png" alt="SOU Jane Sandanski" style=" width: 53px; height: 53px;">
+    </a>
+    <ul>
+        <div class="menu-items">
+
+        <li><a href="index.html">Дома</a></li>
+        <li><a href="C:\Users\Laptop\Desktop\skolo\Veb Strana Za Ucilisni Konsultacii\tim.html">Нашиот тим</a></li>
+        </div>
+        <div class="dropdown">
+        <li><a>Туторство</a></li>
+        <div class="content">
+        <li><a href=" C:\Users\Laptop\Desktop\skolo\Veb Strana Za Ucilisni Konsultacii\predmeti.html">Предмети</a></li>
+        <li><a href=" C:\Users\Laptop\Desktop\skolo\Veb Strana Za Ucilisni Konsultacii\sovetuvanje.html">Кариерно советување</a></li>
+        </div>
+        </div>
+    </ul>
+</nav>
+<main>
+    <div class="heading">
+        <h1> УЧИЛИШНИ КОНСУЛТАЦИИ</h1>
+    </div>
+    <p1>Пријави се сега</p1>
+    <!--od tuka pocnuva najavata-->
+    <form action="action_page.php">
+        <div class="container1">
+            <p>Внеси ги следниве податоци:</p>
+            <div class="center3">
+                <br>
+                <hr>
+                <label for="predmeti"></label>
+                <select class="select" name="predmeti" id="predmeti">
+                    <option disabled selected>Избери предмет</option>
+                    <option value="mtm">Математика</option>
+                    <option value="fiz">Физика</option>
+                    <option value="hem">Хемија</option>
+                    <option value="inf">Информатика</option>
+                    <option value="bio">Биологија</option>
+                    <option value="mkd">Македонски јазик</option>
+                    <option value="ang">Англиски јазик</option>
+                    <option value="ger">Германски јазик</option>
+                    <option value="muz">Музичко</option>
+                </select>
+                <label for="email"></label>
+                <input type="text" placeholder="Внеси е-маил" name="email" required>
+
+                <label for="psw"></label>
+                <input type="password" placeholder="Внеси лозинка" name="psw" required>
+
+                <label for="psw-repeat"></label>
+                <input type="password" placeholder="Повтори ја лозинката" name="psw-repeat" required>
+                <label>
+                    <input type="checkbox" checked="checked" name="rememberme" style="margin-bottom:15px"><p1 style="font-size:17px">Запомни ме</p1>
+                </label>
+                <hr>
+                <br>
+                <div class="clearfix">
+                    <div class="center1">
+                        <button type="button" class="cancelbtn">Cancel</button>
+                    </div>
+                    <div class="center2">
+                        <button type="submit" class="signupbtn">Sign Up</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+    <br>
+    <br>
+</main>
+</html>

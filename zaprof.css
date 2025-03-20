@@ -1,0 +1,49 @@
+﻿.containerZaProf
+{
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.flip-card12 {
+    background-color: transparent;
+    width: 420px;
+    height: 300px;
+    perspective: 1000px; /* 3d effekt */
+}
+
+.flip-card-inner12 {
+    position: relative;
+    width: 420px;
+    height: 300px;
+    text-align: center;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+}
+
+/* rotacija */
+.flip-card12:hover .flip-card-inner12 {
+    transform: rotateY(180deg);
+}
+
+
+.flip-card-front12, .flip-card-back12 {
+    position: absolute;
+    width: 420px;
+    height: 300px;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+/* ak se izguba slikata */
+.flip-card-front12 {
+    background-color: #1e1e6a;
+    color: black;
+}
+
+/* druga strana */
+.flip-card-back12 {
+    background-color: rgb(142, 22, 22);
+    color: white;
+    transform: rotateY(180deg);
+}
